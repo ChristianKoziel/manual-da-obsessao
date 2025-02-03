@@ -355,3 +355,191 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Ajustes Responsivos Gerais */
+@media screen and (max-width: 768px) {
+  /* Ajustes de Body e Containers */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .header {
+    padding: 20px 5%;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .header img {
+    max-width: 100%;
+    width: 250px;
+  }
+
+  /* Seções */
+  .section {
+    padding: 20px 5%;
+  }
+
+  .section h2 {
+    font-size: 2em;
+  }
+
+  .section p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  /* Seção de Problemas */
+  .problem-list li {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .problem-list .icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Seção de Obsessão */
+  .obsession-section {
+    padding: 30px 10px;
+  }
+
+  .obsession-title {
+    font-size: 2em;
+  }
+
+  .white-text {
+    font-size: 1.2em;
+  }
+
+  .check-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .check-list li {
+    font-size: 1em;
+    padding: 10px;
+    padding-left: 40px;
+  }
+
+  .check-list li::before {
+    left: 10px;
+    font-size: 1.2em;
+  }
+
+  /* Bônus */
+  #bonus {
+    padding: 20px 10px;
+  }
+
+  #bonus h2 {
+    font-size: 1.8em;
+  }
+
+  #bonus p {
+    font-size: 1em;
+  }
+
+  #bonus .white-box {
+    flex-direction: column;
+  }
+
+  #bonus .white-box > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Depoimentos */
+  .swiper-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Compra */
+  #purchase img {
+    max-width: 250px;
+  }
+
+  #purchase .prices p {
+    font-size: 1em;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .faq-section button {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .faq-section .answer {
+    font-size: 0.9em;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .section h2 {
+    font-size: 1.8em;
+  }
+
+  .obsession-title {
+    font-size: 1.6em;
+  }
+
+  #bonus h2 {
+    font-size: 1.5em;
+  }
+
+  .check-list li {
+    font-size: 0.9em;
+  }
+
+  /* Garantir que imagens não ultrapassem a largura da tela */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Ajustes de Flexibilidade Geral */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Melhorias de Legibilidade em Dispositivos Móveis */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+}

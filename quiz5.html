@@ -16,6 +16,7 @@
             justify-content: center;
             height: 100vh;
             text-align: center;
+            padding: 10px;
         }
 
         /* Barra de progresso */
@@ -40,6 +41,7 @@
             font-weight: bold;
             color: #fff;
             margin-bottom: 1rem;
+            line-height: 1.2;
         }
 
         h1 span {
@@ -68,12 +70,58 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            width: 80%;
+            max-width: 400px;
         }
 
         .cta-button:hover {
             background-color: #00cc00;
         }
 
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 1rem;
+                width: 90%;
+            }
+        }
+
+        /* Responsividade para telas muito pequenas, como celulares pequenos */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 1rem;
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
