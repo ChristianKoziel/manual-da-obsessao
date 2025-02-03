@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual da Obsessão</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Barra de progresso */
+        .progress-bar-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #555;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 20%; /* Início com 20% (primeiro quiz) */
+            background-color: red;
+            transition: width 0.3s;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        h1 span {
+            color: red;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: red;
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #00cc00;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <img src="src/img/gina3x4.png" >
+    <h1>Descubra como deixar ele <span>obcecado</span> por você</h1>
+    <h2>Apenas usando essa <span style="color: red;">FRASE SECRETA</span></h2>
+    <p>Responda este pequeno questionário para saber se está pronta para ter acesso a esse segredo...</p>
+    <p><strong>Levará menos de 1 minuto</strong></p>
+    <button class="cta-button" onclick="nextQuiz()">SIM, VAMOS COMEÇAR!</button>
+
+    <script>
+        let currentQuiz = 1; // Quiz atual
+        const totalQuizzes = 5; // Total de quizzes
+        const progressBar = document.getElementById("progress-bar");
+
+        // Função para avançar para o próximo quiz
+        function nextQuiz() {
+            if (currentQuiz < totalQuizzes) {
+                currentQuiz++;
+                const progress = (currentQuiz / totalQuizzes) * 100;
+                progressBar.style.width = progress + "%";
+                // Redireciona para o próximo quiz (altere a URL para a próxima página)
+                window.location.href = 'quiz2.html'; // Altere para a URL do próximo quiz
+            } else {
+                alert("Você completou o quiz!");
+            }
+        }
+    </script>
+</body>
+</html>
