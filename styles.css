@@ -1,0 +1,357 @@
+/* Estilos Gerais */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Seções */
+.section {
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.highlight {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.special {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4em;
+  color: #ff0000;
+}
+
+.white-text {
+  color: aliceblue;
+}
+
+.red-text {
+  color: red;
+}
+
+/* Seção de Problemas */
+.problems-section {
+  background-color: #f7f7f7; /* Cor de fundo da seção */
+  padding: 40px 20px; /* Espaçamento interno */
+  margin: 40px 0; /* Margem externa */
+  box-shadow: 0 0 0 100vw white; /* Estende o fundo branco para os lados */
+  clip-path: inset(0 -100vw); /* Corta o excesso do box-shadow */
+}
+
+.problems-section p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.problem-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.problem-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f9f9f9;
+  margin: 10px auto;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  border-left: 5px solid #e53935;
+}
+
+.problem-list .icon {
+  font-size: 1.5em;
+  color: #e53935;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.problem-list .text {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* oq pode fazer com manual da obsessao */
+/* Estilos da Seção */
+.obsession-section {
+  background-color: #000000; /* Fundo preto */
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff; /* Texto branco */
+}
+
+.obsession-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.obsession-title {
+  font-size: 2.5em;
+  color: #ff0000; /* Título em vermelho */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.red-box {
+  background-color: #ff0000; /* Fundo vermelho */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.white-text {
+  font-size: 1.5em;
+  color: #ffffff; /* Texto branco */
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  color: #ffffff; /* Texto branco */
+  margin: 30px 0;
+}
+
+.highlight {
+  color: #ff0000; /* Destaque em vermelho */
+  font-weight: bold;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.check-list li {
+  font-size: 1.2em;
+  color: #ffffff; /* Texto branco */
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #1a1a1a; /* Fundo escuro, mas não preto puro */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  border: 1px solid #333; /* Borda sutil para dar profundidade */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra mais suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  padding-left: 60px; /* Mais espaço para o ícone */
+}
+
+.check-list li::before {
+  /* content: "✔️"; Ícone de check */
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  color: #ff0000; /* Ícone em vermelho */
+  transition: color 0.3s ease;
+}
+
+.check-list li:hover {
+  transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.check-list li:hover::before {
+  color: #ff4d4d; /* Mudar cor do ícone ao passar o mouse */
+}
+.final-text {
+  font-size: 1.2em;
+  color: #ffffff; /* Texto branco */
+  margin-top: 30px;
+}
+
+/* Depoimentos */
+/* Estilos da Seção de Depoimentos */
+.testimonials-section {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5em;
+  color: #ff0000; /* Título em vermelho */
+  margin-bottom: 20px;
+}
+
+.testimonials-section p {
+  font-size: 1.2em;
+  color: #333; /* Texto escuro */
+  margin-bottom: 40px;
+}
+
+/* Estilos do Swiper */
+.swiper-container {
+  width: 100%;
+  max-width: 800px; /* Largura máxima do carrossel */
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Fundo cinza claro para as imagens */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff0000; /* Cor dos botões */
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fundo branco sólido no hover */
+}
+
+/* Paginação (bolinhas) */
+.swiper-pagination-bullet {
+  background-color: #ccc; /* Cor das bolinhas */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff0000; /* Cor da bolinha ativa */
+}
+
+/* BONUS */
+/* Estilos Gerais */
+#bonus {
+  font-family: 'Poppins', sans-serif;
+}
+
+#bonus h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#bonus p {
+  line-height: 1.6;
+}
+
+/* Contador de Tempo */
+#countdown {
+  font-weight: bold;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Botão de Compra */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+  transform: translateY(-3px);
+}
+/* compre o produto */
+/* Estilos Gerais */
+#purchase {
+  font-family: 'Poppins', sans-serif;
+}
+
+#purchase h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#purchase p {
+  line-height: 1.6;
+}
+
+/* Botão de Compra */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
