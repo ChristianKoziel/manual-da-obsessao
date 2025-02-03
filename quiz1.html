@@ -18,7 +18,6 @@
             text-align: center;
         }
 
-        /* Barra de progresso */
         .progress-bar-container {
             position: absolute;
             top: 0;
@@ -73,14 +72,13 @@
         .cta-button:hover {
             background-color: #00cc00;
         }
-
     </style>
 </head>
 <body>
     <div class="progress-bar-container">
         <div class="progress-bar" id="progress-bar"></div>
     </div>
-    <img src="src/img/gina3x4.png" >
+    <img src="src/img/gina3x4.png">
     <h1>Descubra como deixar ele <span>obcecado</span> por você</h1>
     <h2>Apenas usando essa <span style="color: red;">FRASE SECRETA</span></h2>
     <p>Responda este pequeno questionário para saber se está pronta para ter acesso a esse segredo...</p>
@@ -88,18 +86,25 @@
     <button class="cta-button" onclick="nextQuiz()">SIM, VAMOS COMEÇAR!</button>
 
     <script>
+        // Impede que o usuário volte para a página anterior
+        if (window.history && window.history.pushState) {
+            window.history.pushState(null, null, window.location.href);
+            window.onpopstate = function () {
+                window.history.pushState(null, null, window.location.href);
+            };
+        }
+
         let currentQuiz = 1; // Quiz atual
         const totalQuizzes = 5; // Total de quizzes
         const progressBar = document.getElementById("progress-bar");
 
-        // Função para avançar para o próximo quiz
         function nextQuiz() {
             if (currentQuiz < totalQuizzes) {
                 currentQuiz++;
                 const progress = (currentQuiz / totalQuizzes) * 100;
                 progressBar.style.width = progress + "%";
-                // Redireciona para o próximo quiz (altere a URL para a próxima página)
-                window.location.href = 'quiz2.html'; // Altere para a URL do próximo quiz
+                // Redireciona para o próximo quiz
+                window.location.href = 'quiz2.html';
             } else {
                 alert("Você completou o quiz!");
             }

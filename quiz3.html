@@ -18,7 +18,6 @@
             text-align: center;
         }
 
-        /* Barra de progresso */
         .progress-bar-container {
             position: absolute;
             top: 0;
@@ -74,49 +73,43 @@
         .cta-button:hover {
             background-color: #00cc00;
         }
-
     </style>
 </head>
 <body>
+    <script>
+        // Impede que o usuário volte para a página anterior
+        if (window.history && window.history.pushState) {
+            window.history.pushState(null, null, window.location.href);
+            window.onpopstate = function () {
+                window.history.pushState(null, null, window.location.href);
+            };
+        }
+    </script>
     <div class="progress-bar-container">
         <div class="progress-bar" id="progress-bar"></div>
     </div>
     <img src="src/img/homem e mulher conversando.png" alt="Mulher com Homem">
     <h1>Você gostaria de se sentir mais segura e confiante ao interagir com qualquer homem?</h1>
     <p>Selecione sua resposta:</p>
-    <button class="cta-button" onclick="selectAnswer('sim1')">Sim, definitivamente. Isso me daria uma nova personalidade</button>
-    <button class="cta-button" onclick="selectAnswer('sim2')">Sim, muito. Me ajudaria a superar minha timidez e insegurança</button>
-    <button class="cta-button" onclick="selectAnswer('sim3')">Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos</button>
+    <button class="cta-button" onclick="nextQuiz()">Sim, definitivamente. Isso me daria uma nova personalidade</button>
+    <button class="cta-button" onclick="nextQuiz()">Sim, muito. Me ajudaria a superar minha timidez e insegurança</button>
+    <button class="cta-button" onclick="nextQuiz()">Sim, acho que seria ótimo. Me ajudaria a ser mais assertiva nos meus relacionamentos</button>
 
     <script>
         let currentQuiz = 3; // Quiz atual
         const totalQuizzes = 5; // Total de quizzes
         const progressBar = document.getElementById("progress-bar");
 
-        // Função para atualizar o progresso
-        function updateProgressBar() {
-            const progress = (currentQuiz / totalQuizzes) * 100;
-            progressBar.style.width = progress + "%";
-        }
-
-        // Função para selecionar a resposta
-        function selectAnswer(answer) {
-            // Armazena a resposta selecionada (pode ser usada posteriormente, se necessário)
-            localStorage.setItem('quiz3_answer', answer);
-
-            // Atualiza o progresso
-            currentQuiz++;
-            updateProgressBar();
-
-            // Redireciona para o próximo quiz (quiz 4)
-            window.location.href = 'quiz4.html'; // Altere para a URL do próximo quiz
-        }
-
-        // Previne o retorno à página anterior
-        if (sessionStorage.getItem('quiz3_completed')) {
-            window.location.href = 'quiz4.html'; // Redireciona caso o quiz já tenha sido completado
-        } else {
-            sessionStorage.setItem('quiz3_completed', 'true');
+        function nextQuiz() {
+            if (currentQuiz < totalQuizzes) {
+                currentQuiz++;
+                const progress = (currentQuiz / totalQuizzes) * 100;
+                progressBar.style.width = progress + "%";
+                // Redireciona para o próximo quiz
+                window.location.href = 'quiz4.html';
+            } else {
+                alert("Você completou o quiz!");
+            }
         }
     </script>
 </body>
