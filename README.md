@@ -16,7 +16,7 @@ HTML5
 CSS3
 JavaScript
 🌐 Deploy
-O projeto está disponível online e pode ser acessado clicando aqui.
+O projeto está disponível online e pode ser acessado <a>https://manual-da-obsessao.vercel.app/</a>.
 
 📂 Estrutura do Projeto
 index.html: Página principal do projeto.
