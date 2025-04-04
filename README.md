@@ -1,24 +1,38 @@
-<h1>Manual da Obsessão</h1>
-Uma página de vendas criada para um cliente da área de marketing digital.
+# 📘 Manual da Obsessão
 
-<br>
-📝 Descrição<br>
-Este projeto foi desenvolvido sob demanda para um cliente de marketing digital, como parte de uma estratégia de divulgação e comercialização do produto Manual da Obsessão. A página foi projetada para atrair o público-alvo de forma eficiente, utilizando uma abordagem visualmente atrativa e call-to-actions estratégicos.
+**Uma landing page de alta conversão criada para um cliente da área de marketing digital.**
 
-A solução é responsiva, garantindo uma boa experiência de navegação em dispositivos móveis e desktops, e combina design limpo com funcionalidade.
+---
 
-🚀 Funcionalidades
-📱 Responsivo: Compatível com dispositivos móveis e desktops.
-🎯 Design otimizado para conversão: Construído para captar a atenção do público-alvo e aumentar as vendas.
-🔗 Links diretos para compra: Facilita o acesso ao produto, maximizando a eficiência da página.
-💻 Tecnologias Utilizadas
-HTML5
-CSS3
-JavaScript
-🌐 Deploy
-O projeto está disponível online e pode ser acessado <a>https://manual-da-obsessao.vercel.app/</a>.
+## 🌐 Deploy
 
-📂 Estrutura do Projeto
-index.html: Página principal do projeto.
-style.css: Estilos customizados para o site.
-script.js: Funcionalidades interativas e lógicas da página.
+A aplicação está hospedada e disponível para acesso no link abaixo:
+
+👉 [Acesse o Projeto Online](https://manual-da-obsessao.vercel.app/)
+
+---
+
+## 📝 Sobre o Projeto
+
+Este projeto foi desenvolvido sob demanda para um cliente do nicho de marketing digital, com o objetivo de promover e comercializar o produto **Manual da Obsessão**. A página foi construída com foco em performance, usabilidade e conversão, utilizando boas práticas de desenvolvimento e design responsivo.
+
+Foi pensada para oferecer uma **experiência fluida** tanto em dispositivos móveis quanto em desktops, com **call-to-actions estratégicos**, elementos visuais bem posicionados e estrutura otimizada para vendas.
+
+---
+
+## 🚀 Funcionalidades
+
+- 📱 **Layout Responsivo** – Totalmente adaptável a diferentes tamanhos de tela (mobile, tablet, desktop).
+- 🎯 **Design Focado em Conversão** – Criado para chamar atenção do público-alvo e incentivar a ação de compra.
+- 🔗 **Links Diretos para Compra** – Acesso fácil e rápido ao produto, otimizando a jornada do usuário.
+- ⚡ **Performance Rápida** – Código leve para carregamento rápido da página.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+
+---
